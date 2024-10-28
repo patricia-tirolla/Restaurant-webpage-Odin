@@ -3,7 +3,9 @@ import { homeButton } from "./home";
 import { menuButton } from "./menu";
 import { contentButton } from "./contact";
 import "./style.css";
-console.log("it's working");
+import "./contact.css"
+import "./assets/fontawesome/css/all.min.css"
+
 
 homeContent();
 homeButton();
