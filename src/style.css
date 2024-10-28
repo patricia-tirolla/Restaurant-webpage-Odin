@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #6cd475;
+    color: #333;
+    text-align: center;
+}
+header {
+    /* background-image: url('restaurant.jpg'); Image of the restaurant */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* header h1 {
+    font-size: 3em;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 8px;
+} */
+#content {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+#content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+#content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+/* footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+} */
