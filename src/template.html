@@ -11,15 +11,16 @@
     <header>
         <!-- <h1>La Petite Table</h1> -->
         <nav>
-            <button>Home</button>
-            <button>Menu</button>
-            <button>About</button>
+            <button id="home-button">Home</button>
+            <button id="menu-button">Menu</button>
+            <button id="contact-button">Contact</button>
         </nav>
     </header>
     <div id="content">
         <!-- Template goes here -->
     </div>
-    <template id="template-content">
+
+    <template id="about-template">
         <h2>Welcome to La Petite Table</h2>
         <p>
             Nestled in the heart of the city, La Petite Table is your home away from home. Our menu combines the
@@ -37,6 +38,89 @@
             Join us for a
             meal that celebrates flavors and hospitality.
         </p>
+    </template>
+
+    <template id="menu-template">
+        <h2>Our Menu</h2>
+
+        <div class="menu-section">
+            <h2>Appetizers</h2>
+            <div class="menu-item">
+                <h3>Bruschetta</h3>
+                <span class="price">$8</span>
+            </div>
+            <p>Grilled bread topped with fresh tomatoes, basil, and olive oil.</p>
+
+            <div class="menu-item">
+                <h3>Stuffed Mushrooms</h3>
+                <span class="price">$10</span>
+            </div>
+            <p>Button mushrooms filled with a savory cheese and herb stuffing.</p>
+        </div>
+
+        <div class="menu-section">
+            <h2>Main Courses</h2>
+            <div class="menu-item">
+                <h3>Grilled Salmon</h3>
+                <span class="price">$18</span>
+            </div>
+            <p>Fresh salmon fillet served with a lemon-dill sauce and roasted vegetables.</p>
+
+            <div class="menu-item">
+                <h3>Spaghetti Carbonara</h3>
+                <span class="price">$15</span>
+            </div>
+            <p>Classic Italian pasta with creamy sauce, pancetta, and Parmesan cheese.</p>
+        </div>
+
+        <div class="menu-section">
+            <h2>Desserts</h2>
+            <div class="menu-item">
+                <h3>Tiramisu</h3>
+                <span class="price">$7</span>
+            </div>
+            <p>Traditional Italian dessert with layers of espresso-soaked ladyfingers and mascarpone cream.</p>
+
+            <div class="menu-item">
+                <h3>Chocolate Lava Cake</h3>
+                <span class="price">$8</span>
+            </div>
+            <p>Rich chocolate cake with a gooey molten center, served with vanilla ice cream.</p>
+        </div>
+    </template>
+
+    <template id="contact-template">
+    <h1>Contact La Petite Table</h1>
+
+    <div class="contact-info">
+        <h2>Our Address</h2>
+        <p>123 Culinary Street, Flavor Town, FT 12345</p>
+
+        <h2>Call Us</h2>
+        <p>Phone: (123) 456-7890</p>
+
+        <h2>Email Us</h2>
+        <p>Email: contact@lapetitetable.com</p>
+
+        <h2>Follow Us</h2>
+        <p>Instagram | Facebook | Twitter</p>
+    </div>
+
+    <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="/submit-form" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
     </template>
     <!-- <footer>
             <p>Follow us on social media | Contact us: (123) 456-7890</p>
